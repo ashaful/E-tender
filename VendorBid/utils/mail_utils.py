@@ -7,13 +7,13 @@ def get_smtp_server_email(env: Environment):
 
 def get_approver_emails(env: Environment) -> str:
     group = env.ref('VendorBid.group_supplies_approver')
-    approvers = env['res.users'].sudo().search([('groups_id', 'in', group.id)])
+    approvers = env['res.users'].sudo().search([('group_ids', 'in', group.id)])
     email_list = approvers.mapped('login')
     return ','.join(email_list)
 
 def get_reviewers(env: Environment) -> str:
     group = env.ref('VendorBid.group_supplies_reviewer')
-    reviewers = env['res.users'].sudo().search([('groups_id', 'in', group.id)])
+    reviewers = env['res.users'].sudo().search([('group_ids', 'in', group.id)])
     return reviewers
 
 def get_supplier_emails(env: Environment, rfp_product_category_id) -> list:
@@ -29,6 +29,6 @@ def get_supplier_emails(env: Environment, rfp_product_category_id) -> list:
 
 def get_reviewer_emails(env: Environment) -> str:
     group = env.ref('VendorBid.group_supplies_reviewer')
-    reviewers = env['res.users'].sudo().search([('groups_id', 'in', group.id)])
+    reviewers = env['res.users'].sudo().search([('group_ids', 'in', group.id)])
     email_list = reviewers.mapped('login')
     return ','.join(email_list)

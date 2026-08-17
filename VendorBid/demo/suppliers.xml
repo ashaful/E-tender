@@ -282,7 +282,7 @@
             <field name="login">admin@creativesol.com</field>
             <field name="password">admin@examplecreativesol.com</field>
             <field name="name">ExampleCreative Solutions</field>
-            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+            <field name="group_ids" eval="[(6, 0, [ref('base.group_portal')])]"/>
             <field name="company_id" ref="base.main_company"/>
         </record>
 
@@ -291,7 +291,7 @@
             <field name="name">Example Tech Innovators</field>
             <field name="login">info@exampletechinnovators.com</field>
             <field name="password">info@techinnovators.com</field>
-            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+            <field name="group_ids" eval="[(6, 0, [ref('base.group_portal')])]"/>
             <field name="company_id" ref="base.main_company"/>
         </record>
 
@@ -300,7 +300,7 @@
             <field name="name">Example-G Suppliers</field>
             <field name="login">contact@exampleglobalsuppliers.com</field>
             <field name="password">contact@globalsuppliers.com</field>
-            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+            <field name="group_ids" eval="[(6, 0, [ref('base.group_portal')])]"/>
             <field name="company_id" ref="base.main_company"/>
         </record>
 
@@ -309,7 +309,7 @@
             <field name="name">Example Prime Solutions</field>
             <field name="login">support@primesolutions.com</field>
             <field name="password">support@exampleprimesolutions.com</field>
-            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+            <field name="group_ids" eval="[(6, 0, [ref('base.group_portal')])]"/>
             <field name="company_id" ref="base.main_company"/>
         </record>
 
@@ -318,7 +318,7 @@
             <field name="name">Example I Tech</field>
             <field name="login">sales@exampleinnovativetech.com</field>
             <field name="password">sales@innovativetech.com</field>
-            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+            <field name="group_ids" eval="[(6, 0, [ref('base.group_portal')])]"/>
             <field name="company_id" ref="base.main_company"/>
         </record>
 
@@ -327,7 +327,7 @@
             <field name="name">Example-F Enterprises</field>
             <field name="login">info@futureenterprises.com</field>
             <field name="password">info@futureenterprises.com</field>
-            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+            <field name="group_ids" eval="[(6, 0, [ref('base.group_portal')])]"/>
             <field name="company_id" ref="base.main_company"/>
         </record>
 
@@ -336,7 +336,7 @@
             <field name="name">Example-B Solutions</field>
             <field name="login">contact@brightsolutions.com</field>
             <field name="password">contact@brightsolutions.com</field>
-            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+            <field name="group_ids" eval="[(6, 0, [ref('base.group_portal')])]"/>
             <field name="company_id" ref="base.main_company"/>
         </record>
 
@@ -345,7 +345,7 @@
             <field name="name">Example Technologies</field>
             <field name="login">admin@smarttech.com</field>
             <field name="password">admin@smarttech.com</field>
-            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+            <field name="group_ids" eval="[(6, 0, [ref('base.group_portal')])]"/>
             <field name="company_id" ref="base.main_company"/>
         </record>
 
@@ -354,7 +354,7 @@
             <field name="name">Example-N Solutions</field>
             <field name="login">info@nextgensolutions.com</field>
             <field name="password">info@nextgensolutions.com</field>
-            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+            <field name="group_ids" eval="[(6, 0, [ref('base.group_portal')])]"/>
             <field name="company_id" ref="base.main_company"/>
         </record>
 
@@ -363,7 +363,7 @@
             <field name="name">Example-A Enterprises</field>
             <field name="login">support@alphaenterprises.com</field>
             <field name="password">support@alphaenterprises.com</field>
-            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+            <field name="group_ids" eval="[(6, 0, [ref('base.group_portal')])]"/>
             <field name="company_id" ref="base.main_company"/>
         </record>
 
@@ -372,7 +372,7 @@
             <field name="name">Example-R Computers</field>
             <field name="login">contact@ryans.com</field>
             <field name="password">contact@ryans.com</field>
-            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+            <field name="group_ids" eval="[(6, 0, [ref('base.group_portal')])]"/>
             <field name="company_id" ref="base.main_company"/>
         </record>
         

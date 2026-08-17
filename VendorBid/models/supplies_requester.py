@@ -71,7 +71,7 @@ class SuppliesRequester(models.Model):
                 'password': rec.email,  # Should be changed by the user later
                 'active': True,
             })
-            user.write({'groups_id': [(5, 0, 0), (4, portal_group.id), (4, requester_group.id)]})
+            user.write({'group_ids': [(5, 0, 0), (4, portal_group.id), (4, requester_group.id)]})
 
             # Update state to approved
             rec.state = 'approved'
