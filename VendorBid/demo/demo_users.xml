@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="demo_morgan" model="res.partner">
+            <field name="name">Morgan Demo</field>
+            <field name="is_company" eval="False"/>
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo/demo_morgan.jpg"/>
+        </record>
+
+        <record id="user_morgan" model="res.users">
+            <field name="name">Morgan Demo</field>
+            <field name="login">morgan</field>
+            <field name="email">morgan.demo@example.com</field>
+            <field name="password">morgan</field>
+            <field name="partner_id" ref="demo_morgan"/>
+            <field name="groups_id" eval="[(6, 0, [ref('VendorBid.group_supplies_reviewer'), ref('purchase.group_purchase_user')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo/demo_morgan.jpg"/>
+        </record>
+
+        <record id="base.user_admin" model="res.users">
+            <field name="groups_id" eval="[(4, ref('VendorBid.group_supplies_approver'))]"/>
+        </record>
+    </data>
+</odoo>

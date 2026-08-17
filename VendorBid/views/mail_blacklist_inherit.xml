@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="supplies_mail_blacklist_view_tree" model="ir.ui.view">
+        <field name="name">mail.blacklist.view.tree.inherit.supplies</field>
+        <field name="model">mail.blacklist</field>
+        <field name="inherit_id" ref="mail.mail_blacklist_view_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='email']" position="after">
+                <field name="reason"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="supplies_mail_blacklist_view_form" model="ir.ui.view">
+        <field name="name">mail.blacklist.view.form.inherit.supplies</field>
+        <field name="model">mail.blacklist</field>
+        <field name="inherit_id" ref="mail.mail_blacklist_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='email']" position="after">
+                <field name="reason"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,17 @@
+id,date_approve,required_date,state,create_uid:id,review_by:id,date_accept,approved_supplier_id:id,product_category_id:id
+rfp_1,2025-01-02,2025-01-08,accepted,base.user_demo,base.user_admin,2025-01-04,supplier_3,product.product_category_all
+rfp_2,2025-01-03,2025-01-10,accepted,base.user_demo,base.user_admin,2025-01-06,supplier_3,product.product_category_all
+rfp_3,2025-01-03,2025-01-12,accepted,base.user_demo,base.user_admin,2025-01-08,supplier_4,product.product_category_all
+rfp_4,2025-01-05,2025-01-14,accepted,user_morgan,base.user_admin,2025-01-10,supplier_3,product.product_category_all
+rfp_5,2025-01-07,2025-01-17,accepted,base.user_demo,base.user_admin,2025-01-13,supplier_3,product.product_category_all
+rfp_6,2025-01-10,2025-01-19,accepted,user_morgan,base.user_admin,2025-01-15,supplier_4,product.product_category_all
+rfp_7,2025-01-12,2025-03-31,approved,base.user_demo,base.user_admin,,,product.product_category_all
+rfp_8,2025-01-14,2025-01-25,rejected,base.user_demo,base.user_admin,,,product.product_category_all
+rfp_9,2025-01-15,2025-01-27,recommendation,base.user_demo,base.user_admin,,,product.product_category_all
+rfp_10,2025-01-17,2025-02-28,closed,base.user_demo,base.user_admin,,,product.product_category_all
+rfp_11,2025-01-25,2025-03-15,recommendation,base.user_demo,base.user_admin,,,product.product_category_all
+rfp_12,,2025-04-01,draft,base.user_demo,,,,product.product_category_all
+rfp_13,2025-02-01,2025-02-15,closed,base.user_demo,base.user_admin,,,product.product_category_all
+rfp_14,,2025-02-05,submitted,base.user_demo,,,,product.product_category_all
+rfp_15,2025-01-30,2025-02-10,rejected,base.user_demo,base.user_admin,,,product.product_category_all
+rfp_16,2025-02-10,2025-02-20,accepted,base.user_demo,base.user_admin,2025-02-24,supplier_5,product.product_category_all

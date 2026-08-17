@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Record 1 -->
+        <record id="sup_reg_1" model="supplies.requester">
+            <field name="name">ABC</field>
+            <field name="email">abc@example.com</field>
+            <field name="phone">+4654646456</field>
+            <field name="reason">Want to buy products for construction.</field>
+            <field name="profile_picture" type="base64" file="VendorBid/static/img/demo-requester/rq_1.png"/>
+        </record>
+
+        <!-- Record 2 -->
+        <record id="sup_reg_2" model="supplies.requester">
+            <field name="name">XYZ</field>
+            <field name="email">xyz@example.com</field>
+            <field name="phone">+4654646456</field>
+            <field name="reason">Want to buy products for construction.</field>
+            <field name="profile_picture" type="base64" file="VendorBid/static/img/demo-requester/rq_2.png"/>
+        </record>
+
+        <!-- Record 3 -->
+        <record id="sup_reg_3" model="supplies.requester">
+            <field name="name">DEF</field>
+            <field name="email">def@example.com</field>
+            <field name="phone">+4654646456</field>
+            <field name="reason">Want to buy products for construction.</field>
+            <field name="profile_picture" type="base64" file="VendorBid/static/img/demo-requester/rq_3.png"/>
+        </record>
+
+        <!-- Record 4 (Approved) -->
+        <record id="sup_reg_4" model="supplies.requester">
+            <field name="name">GHI</field>
+            <field name="email">ghi@example.com</field>
+            <field name="phone">+1234567890</field>
+            <field name="reason">Need materials for manufacturing.</field>
+            <field name="profile_picture" type="base64" file="VendorBid/static/img/demo-requester/rq_4.png"/>
+        </record>
+
+        <!-- Record 5 (Approved) -->
+        <record id="sup_reg_5" model="supplies.requester">
+            <field name="name">JKL</field>
+            <field name="email">jkl@example.com</field>
+            <field name="phone">+0987654321</field>
+            <field name="reason">Purchasing office supplies.</field>
+            <field name="profile_picture" type="base64" file="VendorBid/static/img/demo-requester/rq_5.png"/>
+        </record>
+
+        <!-- Record 6 -->
+        <record id="sup_reg_6" model="supplies.requester">
+            <field name="name">MNO</field>
+            <field name="email">mno@example.com</field>
+            <field name="phone">+5647382910</field>
+            <field name="reason">Looking for electronic components.</field>
+            <field name="profile_picture" type="base64" file="VendorBid/static/img/demo-requester/rq_6.png"/>
+        </record>
+
+        <!-- Record 7 -->
+        <record id="sup_reg_7" model="supplies.requester">
+            <field name="name">PQR</field>
+            <field name="email">pqr@example.com</field>
+            <field name="phone">+1290837465</field>
+            <field name="reason">Buying raw materials for textiles.</field>
+            <field name="profile_picture" type="base64" file="VendorBid/static/img/demo-requester/rq_7.png"/>
+        </record>
+    </data>
+</odoo>

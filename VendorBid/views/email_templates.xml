@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="email_template_model_bjit_supplies_registration_otp" model="mail.template">
+        <field name="name">Supplier Registration OTP</field>
+        <field name="model_id" ref="model_supplies_registration_otp"/>
+        <field name="subject">Your OTP</field>
+        <field name="email_to">{{object.email}}</field>
+        <field name="body_html" type="html">
+            <h3>Dear User</h3>
+            <p>
+                Your OTP is: <strong t-field="object.otp"/>.
+            </p>
+            <p>
+                Please Note: This OTP is valid for 5 minutes.
+            </p>
+            <p>
+                Regards
+                <br/>
+                <strong t-field="object.company.name"/>
+            </p>
+        </field>
+    </record>
+
+    <record id="email_template_model_supplies_vendor_registration_reviewer" model="mail.template">
+        <field name="name">Supplier Registration Reviewer Notification</field>
+        <field name="model_id" ref="base.model_res_users"/>
+        <field name="email_to">{{object.email}}</field>
+        <field name="subject">New Supplier Registration</field>
+        <field name="body_html" type="html">
+            <h3>Dear User</h3>
+            <p>
+                A new supplier registration is submitted for review. Please review the registration and take necessary
+                actions.
+                View the registration:<a t-att-href="ctx.get('reg_url')" t-esc="ctx.get('reg_url')"/>.
+            </p>
+            <p>Regards</p>
+            <p>
+                <t t-esc="ctx.get('company_name') or not_available"/>
+            </p>
+        </field>
+    </record>
+
+    <record id="email_template_model_supplies_vendor_registration_confirmation" model="mail.template">
+        <field name="name">Supplier Registration Confirmation</field>
+        <field name="model_id" ref="model_supplies_registration"/>
+        <field name="subject">Supplier Account Confirmation</field>
+        <field name="email_to">{{object.email}}</field>
+        <field name="body_html" type="html">
+            <h3>Dear User</h3>
+            <p>
+                Congratulations! Your registration is reviewed and confirmed. You can now login to your account. Here is
+                your login credentials.
+            </p>
+            <p>
+                Email:
+                <t t-out="ctx.get('email') or not_available"/>
+            </p>
+            <p>
+                Password:
+                <t t-out="ctx.get('password') or not_available"/>
+            </p>
+            <p>
+                Please change your password after first login. Please keep your credentials safe and let us know if you
+                have any queries or issues.
+            </p>
+            <p>Regards</p>
+            <p>My Company</p>
+        </field>
+    </record>
+
+    <record id="email_template_model_supplies_vendor_registration_rejection" model="mail.template">
+        <field name="name">Supplier Registration Rejection</field>
+        <field name="model_id" ref="model_supplies_registration"/>
+        <field name="body_html" type="html">
+            <h3>Dear User</h3>
+            <p>
+                We are sorry to inform you that your registration for supplier account is rejected. The reason for
+                rejection is stated below.
+            </p>
+            <p>
+                Reason:
+                <t t-out="ctx.get('reason') or not_available"/>
+            </p>
+            <p>Regards</p>
+            <p>
+                <t t-esc="ctx.get('company_name') or not_available"/>
+            </p>
+        </field>
+    </record>
+
+    <record id="email_template_model_purchase_order_rfq_submission" model="mail.template">
+        <field name="name">RFQ Submission Reviewer Notification</field>
+        <field name="model_id" ref="purchase.model_purchase_order"/>
+        <field name="body_html" type="html">
+            <h3>Dear User</h3>
+            <p>
+                A new RFQ is submitted for your Request for Purchase <t t-esc="ctx.get('rfp_number') or not_available"/>.
+                Please review the RFQ and take necessary actions.
+            </p>
+            <p>Regards</p>
+            <p>
+                <t t-esc="ctx.get('company_name') or not_available"/>
+            </p>
+        </field>
+    </record>
+
+    <record id="email_template_model_supplies_rfp_submission" model="mail.template">
+        <field name="name">RFP Submission Approver Notification</field>
+        <field name="model_id" ref="model_supplies_rfp"/>
+        <field name="body_html" type="html">
+            <h3>Dear User</h3>
+            <p>
+                A new RFP is submitted by <t t-esc="ctx.get('reviwer_name') or not_available"/>. Please review the RFP
+                and take necessary actions.
+            </p>
+            <p>Regards</p>
+            <p>
+                <t t-esc="ctx.get('company_name') or not_available"/>
+            </p>
+        </field>
+    </record>
+
+    <record id="email_template_model_supplies_rfp_approved_reviewer" model="mail.template">
+        <field name="name">RFP Approved Notification</field>
+        <field name="model_id" ref="model_supplies_rfp"/>
+        <field name="body_html" type="html">
+            <h3>Dear User</h3>
+            <p>
+                Congratulations! Your Request for Purchase
+                <t t-esc="ctx.get('rfp_number') or not_available"/>
+                is approved.
+                It is now accessible for RFQ submission through the portal.
+            </p>
+            <p>Regards</p>
+            <p>
+                <t t-esc="ctx.get('company_name') or not_available"/>
+            </p>
+        </field>
+    </record>
+
+    <record id="email_template_model_supplies_rfp_rejected_reviewer" model="mail.template">
+        <field name="name">RFP Rejected Notification</field>
+        <field name="model_id" ref="model_supplies_rfp"/>
+        <field name="body_html" type="html">
+            <h3>Dear User</h3>
+            <p>
+                Your Request for Purchase
+                <t t-esc="ctx.get('rfp_number') or not_available"/>
+                is rejected by <t t-esc="ctx.get('approver_name') or not_available"/>.
+            </p>
+            <p>Regards</p>
+            <p>
+                <t t-esc="ctx.get('company_name') or not_available"/>
+            </p>
+        </field>
+    </record>
+
+    <record id="email_template_model_supplies_rfp_approved_supplier" model="mail.template">
+        <field name="name">Published RFP Vendor Invitation</field>
+        <field name="model_id" ref="model_supplies_rfp"/>
+        <field name="subject">Invitation to Bid: {{ object.rfp_number }}</field>
+        <field name="body_html" type="html">
+            <h3>Invitation to Submit Bid</h3>
+            <p>A new RFP has been published for eligible vendors.</p>
+            <ul>
+                <li><strong>RFP:</strong> <t t-esc="ctx.get('rfp_number')"/> - <t t-esc="ctx.get('rfp_title')"/></li>
+                <li><strong>Category:</strong> <t t-esc="ctx.get('category')"/></li>
+                <li><strong>Deadline:</strong> <t t-esc="ctx.get('deadline')"/></li>
+                <li><strong>Delivery / Work Location:</strong> <t t-esc="ctx.get('delivery_location') or 'Not specified'"/></li>
+                <li><strong>Buyer Contact:</strong> <t t-esc="ctx.get('buyer_contact') or 'Not specified'"/></li>
+            </ul>
+            <p><strong>Scope:</strong><br/><t t-esc="ctx.get('scope') or 'Please review the portal page for full scope.'"/></p>
+            <p><strong>Mandatory Bid Documents:</strong><br/><t t-esc="ctx.get('mandatory_bid_documents') or 'Signed quotation, technical proposal and experience evidence.'"/></p>
+            <p>
+                <a t-att-href="ctx.get('login_url')" style="background:#0d6efd;color:#fff;padding:10px 16px;text-decoration:none;border-radius:4px;">
+                    View RFP &amp; Submit Bid
+                </a>
+            </p>
+            <p>
+                Public summary:
+                <a t-att-href="ctx.get('public_url')" t-esc="ctx.get('public_url')"/>
+            </p>
+            <p>Regards,<br/><strong><t t-esc="ctx.get('company_name')"/></strong></p>
+        </field>
+    </record>
+
+    <record id="email_template_bid_acceptance" model="mail.template">
+        <field name="name">Bid Acceptance Notification</field>
+        <field name="model_id" ref="purchase.model_purchase_order"/>
+        <field name="subject">Bid Accepted: {{ object.rfp_id.rfp_number }}</field>
+        <field name="body_html" type="html">
+            <h3>Bid Accepted</h3>
+            <p>Dear <t t-esc="ctx.get('vendor_name')"/>,</p>
+            <p>Your bid <strong><t t-esc="ctx.get('rfq_number')"/></strong> for RFP <strong><t t-esc="ctx.get('rfp_number')"/></strong> has been accepted.</p>
+            <p><strong>Selection Reason:</strong><br/><t t-esc="ctx.get('decision_reason')"/></p>
+            <p><a t-att-href="ctx.get('portal_url')">View your bid</a></p>
+            <p>Regards,<br/><strong><t t-esc="ctx.get('company_name')"/></strong></p>
+        </field>
+    </record>
+
+    <record id="email_template_bid_non_selection" model="mail.template">
+        <field name="name">Bid Non-selection Notification</field>
+        <field name="model_id" ref="purchase.model_purchase_order"/>
+        <field name="subject">Bid Not Selected: {{ object.rfp_id.rfp_number }}</field>
+        <field name="body_html" type="html">
+            <h3>Bid Not Selected</h3>
+            <p>Dear <t t-esc="ctx.get('vendor_name')"/>,</p>
+            <p>Thank you for submitting bid <strong><t t-esc="ctx.get('rfq_number')"/></strong> for RFP <strong><t t-esc="ctx.get('rfp_number')"/></strong>.</p>
+            <p>Another bid was selected for this RFP.</p>
+            <p>Regards,<br/><strong><t t-esc="ctx.get('company_name')"/></strong></p>
+        </field>
+    </record>
+
+    <record id="email_template_bid_rejection" model="mail.template">
+        <field name="name">Bid Rejection Notification</field>
+        <field name="model_id" ref="purchase.model_purchase_order"/>
+        <field name="subject">Bid Rejected: {{ object.rfp_id.rfp_number }}</field>
+        <field name="body_html" type="html">
+            <h3>Bid Rejected</h3>
+            <p>Dear <t t-esc="ctx.get('vendor_name')"/>,</p>
+            <p>Your bid <strong><t t-esc="ctx.get('rfq_number')"/></strong> for RFP <strong><t t-esc="ctx.get('rfp_number')"/></strong> has been rejected.</p>
+            <p><strong>Reason:</strong><br/><t t-esc="ctx.get('decision_reason')"/></p>
+            <p>Regards,<br/><strong><t t-esc="ctx.get('company_name')"/></strong></p>
+        </field>
+    </record>
+
+    <record id="email_template_bid_clarification" model="mail.template">
+        <field name="name">Bid Clarification Notification</field>
+        <field name="model_id" ref="purchase.model_purchase_order"/>
+        <field name="subject">Clarification Required: {{ object.rfp_id.rfp_number }}</field>
+        <field name="body_html" type="html">
+            <h3>Clarification Required</h3>
+            <p>Dear <t t-esc="ctx.get('vendor_name')"/>,</p>
+            <p>Clarification is required for bid <strong><t t-esc="ctx.get('rfq_number')"/></strong> against RFP <strong><t t-esc="ctx.get('rfp_number')"/></strong>.</p>
+            <p><strong>Clarification Note:</strong><br/><t t-esc="ctx.get('decision_reason')"/></p>
+            <p><a t-att-href="ctx.get('portal_url')">View your bid</a></p>
+            <p>Regards,<br/><strong><t t-esc="ctx.get('company_name')"/></strong></p>
+        </field>
+    </record>
+
+    <record id="email_template_model_supplies_rfp_recommended" model="mail.template">
+        <field name="name">RFP Recommended Approver Notification</field>
+        <field name="model_id" ref="model_supplies_rfp"/>
+        <field name="body_html" type="html">
+            <h3>Dear User</h3>
+            <p>
+                The Request for Purchase
+                <t t-esc="ctx.get('rfp_number') or not_available"/>
+                now has recommended RFQ lines.
+                Please review the recommended RFQ lines and take necessary actions.
+            </p>
+            <p>Regards</p>
+            <p>
+                <t t-esc="ctx.get('company_name') or not_available"/>
+            </p>
+        </field>
+    </record>
+
+    <record id="email_template_partner_edit_request" model="mail.template">
+        <field name="name">Partner Edit Request Submitted</field>
+        <field name="model_id" ref="base.model_res_users"/>
+        <field name="email_to">{{object.email}}</field>
+        <field name="subject">Partner Edit Request Submitted</field>
+        <field name="body_html" type="html">
+            <p>Dear Reviewer,</p>
+            <p>A supplier has submitted a partner information edit request for your approval.</p>
+            <p>
+                <strong>Supplier Name:</strong>
+                <t t-esc="ctx.get('company_name')"/>
+            </p>
+            <p>
+                <strong>Submission Date:</strong>
+                <t t-esc="ctx.get('submission_date')"/>
+            </p>
+            <p>Please review the request</p>
+
+            <p>Thank you.</p>
+            <p>
+                <strong>
+                    <t t-esc="ctx.get('company_name')"/>
+                </strong>
+            </p>
+        </field>
+    </record>
+    <record id="email_template_model_edit_request_rejection" model="mail.template">
+        <field name="name">Partner Edit Request Rejection Notification</field>
+        <field name="model_id" ref="model_partner_edit_request"/>
+        <field name="body_html" type="html">
+
+            <h3>Dear Supplier,</h3>
+            <p>
+                We regret to inform you that your recent partner edit request has been <strong>rejected</strong>.
+            </p>
+            <p>
+                <strong>Reason for Rejection:</strong>
+                <br/>
+                <span style="color: red;">
+                    <t t-esc="ctx.get('reason') or 'No reason provided.'"/>
+                </span>
+            </p>
+            <p>
+                If you believe this was a mistake or you have further queries, please contact us for clarification.
+            </p>
+            <p>Regards,</p>
+            <p>
+                <strong>
+                    <t t-esc="ctx.get('company_name') or 'Company Name Not Available'"/>
+                </strong>
+            </p>
+
+        </field>
+    </record>
+
+    <record id="email_template_edit_profile_approved" model="mail.template">
+        <field name="name">Partner Edit Request Acception Notification</field>
+        <field name="model_id" ref="model_partner_edit_request"/>
+        <field name="body_html" type="html">
+            <h3>Dear
+                <t t-esc="ctx.get('company_name')"/>
+            </h3>
+            <p>
+                Your supplier profile edit request has been <strong>approved</strong>.
+            </p>
+            <p>Submitted on:
+                <strong>
+                    <t t-esc="ctx.get('submitted')"/>
+                </strong>
+            </p>
+            <p>Regards,</p>
+            <p>
+                <strong>
+                    <t t-esc="ctx.get('my_company')"/>
+                </strong>
+            </p>
+
+            <p>
+                <t t-esc="ctx.get('company_name') or not_available"/>
+            </p>
+        </field>
+    </record>
+
+    <record id="email_template_model_supplies_requester_rejected" model="mail.template">
+        <field name="name">RFP Rejected Notification</field>
+        <field name="model_id" ref="model_supplies_requester"/>
+        <field name="body_html" type="html">
+            <h3>Dear User</h3>
+            <p>
+                Your Request for register as a requester is rejected. We appreciate your interest and looking for future
+                collaboration.
+            </p>
+            <p>Regards</p>
+            <p>
+                <t t-esc="ctx.get('company_name') or not_available"/>
+            </p>
+        </field>
+    </record>
+
+    <record id="email_template_model_supplies_requester_approved" model="mail.template">
+        <field name="name">Requester Registration Success Notification</field>
+        <field name="model_id" ref="model_supplies_requester"/>
+        <field name="body_html" type="html">
+            <h3>Dear User</h3>
+            <p>
+                Congratulations! Your registration is approved. You can now login to your account. Here is
+                your login credentials.
+            </p>
+            <p>
+                Email:
+                <t t-out="ctx.get('email') or not_available"/>
+            </p>
+            <p>
+                Password:
+                <t t-out="ctx.get('password') or not_available"/>
+            </p>
+            <p>Regards</p>
+            <p>
+                <t t-esc="ctx.get('company_name') or not_available"/>
+            </p>
+        </field>
+    </record>
+
+    <record id="email_template_requester_submit_rfp" model="mail.template">
+        <field name="name">Requester RFP Submitted</field>
+        <field name="model_id" ref="base.model_res_users"/>
+        <field name="email_to">{{object.email}}</field>
+        <field name="body_html" type="html">
+            <p>Dear Reviewer,</p>
+            <p>A Requester has submitted a RFP waiting for your review.</p>
+            <p>
+                <strong>Requester ID:</strong>
+                <t t-esc="ctx.get('requester_id')"/>
+            </p>
+            <p>
+                <strong>Requester Name:</strong>
+                <t t-esc="ctx.get('requester_name')"/>
+            </p>
+            <p>
+                <strong>RFP Number:</strong>
+                <t t-esc="ctx.get('rfp_number')"/>
+            </p>
+            <p>Please review the RFP</p>
+
+            <p>Thank you.</p>
+            <p>
+                <strong>
+                    <t t-esc="ctx.get('company_name')"/>
+                </strong>
+            </p>
+        </field>
+    </record>
+
+    <record id="email_template_requester_registration" model="mail.template">
+        <field name="name">Requester RFP Submitted</field>
+        <field name="model_id" ref="base.model_res_users"/>
+        <field name="email_to">{{object.email}}</field>
+        <field name="body_html" type="html">
+            <p>Dear Reviewer,</p>
+            <p>A Requester has registered now!</p>
+            <p>
+                <strong>Requester ID:</strong>
+                <t t-esc="ctx.get('requester_id')"/>
+            </p>
+            <p>
+                <strong>Requester Name:</strong>
+                <t t-esc="ctx.get('requester_name')"/>
+            </p>
+            <p>Please review the info and decide the future proceeding.</p>
+
+            <p>Thank you.</p>
+            <p>
+                <strong>
+                    <t t-esc="ctx.get('company_name')"/>
+                </strong>
+            </p>
+        </field>
+    </record>
+
+</odoo>

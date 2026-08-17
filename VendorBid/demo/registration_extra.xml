@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="reg_1" model="supplies.registration">
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/1.jpg"/>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="client_ref_ids" eval="[(4, ref('reg_client_1')), (4, ref('reg_client_2')), (4, ref('reg_client_3')), (4, ref('reg_client_4')), (4, ref('reg_client_5'))]"/>
+        </record>
+        <record id="reg_2" model="supplies.registration">
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/2.jpg"/>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="client_ref_ids" eval="[(4, ref('reg_client_2')), (4, ref('reg_client_3')), (4, ref('reg_client_4')), (4, ref('reg_client_5')), (4, ref('reg_client_6'))]"/>
+        </record>
+        <record id="reg_3" model="supplies.registration">
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/3.jpg"/>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="client_ref_ids" eval="[(4, ref('reg_client_1')), (4, ref('reg_client_2')), (4, ref('reg_client_3'))]"/>
+        </record>
+        <record id="reg_4" model="supplies.registration">
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/4.jpg"/>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="client_ref_ids" eval="[(4, ref('reg_client_4')), (4, ref('reg_client_5')), (4, ref('reg_client_6')), (4, ref('reg_client_7')), (4, ref('reg_client_8'))]"/>
+        </record>
+        <record id="reg_5" model="supplies.registration">
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/5.png"/>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="client_ref_ids" eval="[(4, ref('reg_client_5')), (4, ref('reg_client_6')), (4, ref('reg_client_7')), (4, ref('reg_client_8')), (4, ref('reg_client_9'))]"/>
+        </record>
+        <record id="reg_6" model="supplies.registration">
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/6.png"/>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="client_ref_ids" eval="[(4, ref('reg_client_6')), (4, ref('reg_client_7')), (4, ref('reg_client_8')), (4, ref('reg_client_9')), (4, ref('reg_client_10'))]"/>
+        </record>
+        <record id="reg_7" model="supplies.registration">
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/7.jpg"/>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="client_ref_ids" eval="[(4, ref('reg_client_7')), (4, ref('reg_client_8')), (4, ref('reg_client_9')), (4, ref('reg_client_10')), (4, ref('reg_client_1'))]"/>
+        </record>
+        <record id="reg_8" model="supplies.registration">
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/8.png"/>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="client_ref_ids" eval="[(4, ref('reg_client_8')), (4, ref('reg_client_9')), (4, ref('reg_client_10')), (4, ref('reg_client_1')), (4, ref('reg_client_2'))]"/>
+        </record>
+        <record id="reg_9" model="supplies.registration">
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/9.jpg"/>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="client_ref_ids" eval="[(4, ref('reg_client_9')), (4, ref('reg_client_10')), (4, ref('reg_client_1')), (4, ref('reg_client_2')), (4, ref('reg_client_3'))]"/>
+        </record>
+        <record id="reg_10" model="supplies.registration">
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/10.png"/>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="client_ref_ids" eval="[(4, ref('reg_client_10')), (4, ref('reg_client_1')), (4, ref('reg_client_2')), (4, ref('reg_client_3')), (4, ref('reg_client_4'))]"/>
+        </record>
+        <record id="reg_11" model="supplies.registration">
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/11.jpg"/>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="client_ref_ids" eval="[(4, ref('reg_client_1')), (4, ref('reg_client_2')), (4, ref('reg_client_3')), (4, ref('reg_client_4')), (4, ref('reg_client_5'))]"/>
+        </record>
+        <record id="reg_12" model="supplies.registration">
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/12.png"/>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="client_ref_ids" eval="[(4, ref('reg_client_2')), (4, ref('reg_client_3')), (4, ref('reg_client_4')), (4, ref('reg_client_5')), (4, ref('reg_client_6'))]"/>
+        </record>
+        <record id="reg_13" model="supplies.registration">
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/13.jpg"/>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="client_ref_ids" eval="[(4, ref('reg_client_3')), (4, ref('reg_client_4')), (4, ref('reg_client_5')), (4, ref('reg_client_6')), (4, ref('reg_client_7'))]"/>
+        </record>
+        <record id="reg_14" model="supplies.registration">
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/14.png"/>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="client_ref_ids" eval="[(4, ref('reg_client_4')), (4, ref('reg_client_5')), (4, ref('reg_client_6')), (4, ref('reg_client_7')), (4, ref('reg_client_8'))]"/>
+        </record>
+        <record id="reg_15" model="supplies.registration">
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="client_ref_ids" eval="[(4, ref('reg_client_5')), (4, ref('reg_client_6')), (4, ref('reg_client_7')), (4, ref('reg_client_8')), (4, ref('reg_client_9'))]"/>
+        </record>
+        <record id="reg_16" model="supplies.registration">
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="client_ref_ids" eval="[(4, ref('reg_client_6')), (4, ref('reg_client_7')), (4, ref('reg_client_8')), (4, ref('reg_client_9')), (4, ref('reg_client_10'))]"/>
+        </record>
+        <record id="reg_17" model="supplies.registration">
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/17.png"/>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="client_ref_ids" eval="[(4, ref('reg_client_7')), (4, ref('reg_client_8')), (4, ref('reg_client_9')), (4, ref('reg_client_10')), (4, ref('reg_client_1'))]"/>
+        </record>
+        <record id="reg_18" model="supplies.registration">
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/18.jpg"/>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="client_ref_ids" eval="[(4, ref('reg_client_8')), (4, ref('reg_client_9')), (4, ref('reg_client_10')), (4, ref('reg_client_1')), (4, ref('reg_client_2'))]"/>
+        </record>
+        <record id="reg_19" model="supplies.registration">
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="client_ref_ids" eval="[(4, ref('reg_client_9')), (4, ref('reg_client_10')), (4, ref('reg_client_1')), (4, ref('reg_client_2')), (4, ref('reg_client_3'))]"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,84 @@
+id,product_id:id,order_id:id,product_qty,price_unit,delivery_charge,date_planned,name
+rfq_line_1,product.product_product_5,rfq_1,5,147,200,2025-01-07,Corner Desk Right Sit
+rfq_line_2,product.product_product_6,rfq_1,3,320,300,2025-01-07,Large Cabinet
+rfq_line_3,product.product_product_7,rfq_1,10,15.8,50,2025-01-07,Storage Box
+rfq_line_4,product.product_product_5,rfq_2,5,145,170,2025-01-06,Corner Desk Right Sit
+rfq_line_5,product.product_product_6,rfq_2,3,310,250,2025-01-06,Large Cabinet
+rfq_line_6,product.product_product_7,rfq_2,10,15.5,40,2025-01-06,Storage Box
+rfq_line_7,product.product_product_5,rfq_3,5,150,180,2025-01-05,Corner Desk Right Sit
+rfq_line_8,product.product_product_6,rfq_3,3,330,280,2025-01-05,Large Cabinet
+rfq_line_9,product.product_product_7,rfq_3,10,15.6,60,2025-01-05,Storage Box
+rfq_line_10,product.product_product_8,rfq_4,2,1200,100,2025-01-10,Large Desk
+rfq_line_11,product.product_product_9,rfq_4,15,100,50,2025-01-10,Pedal Bin
+rfq_line_12,product.product_product_8,rfq_5,2,1100,90,2025-01-09,Large Desk
+rfq_line_13,product.product_product_9,rfq_5,15,90,40,2025-01-09,Pedal Bin
+rfq_line_14,product.product_product_10,rfq_6,4,120,80,2025-01-12,Cabinet with Doors
+rfq_line_15,product.product_product_12,rfq_6,6,150,100,2025-01-12,Office Chair Black
+rfq_line_16,product.product_product_10,rfq_7,4,115,80,2025-01-12,Cabinet with Doors
+rfq_line_17,product.product_product_12,rfq_7,6,140,100,2025-01-12,Office Chair Black
+rfq_line_18,product.product_product_10,rfq_8,4,110,80,2025-01-12,Cabinet with Doors
+rfq_line_19,product.product_product_12,rfq_8,6,140,100,2025-01-12,Office Chair Black
+rfq_line_20,product.product_product_13,rfq_9,5,150,180,2025-01-14,Corner Desk Left Sit
+rfq_line_21,product.product_product_20,rfq_9,1,1700,200,2025-01-14,Flipover
+rfq_line_22,product.product_product_13,rfq_10,5,145,170,2025-01-14,Corner Desk Left Sit
+rfq_line_23,product.product_product_20,rfq_10,1,1600,190,2025-01-14,Flipover
+rfq_line_24,product.product_product_13,rfq_11,5,140,160,2025-01-14,Corner Desk Left Sit
+rfq_line_25,product.product_product_20,rfq_11,1,1500,180,2025-01-14,Flipover
+rfq_line_26,product.product_product_22,rfq_12,2,2100,100,2025-01-17,Desk Stand with Screen
+rfq_line_27,product.product_product_24,rfq_12,3,885,50,2025-01-17,Individual Workplace
+rfq_line_28,product.product_product_22,rfq_13,2,2000,90,2025-01-17,Desk Stand with Screen
+rfq_line_29,product.product_product_24,rfq_13,3,875,40,2025-01-17,Individual Workplace
+rfq_line_30,product.product_product_22,rfq_14,2,2050,95,2025-01-17,Desk Stand with Screen
+rfq_line_31,product.product_product_24,rfq_14,3,880,45,2025-01-17,Individual Workplace
+rfq_line_32,product.product_product_25,rfq_15,4,300,50,2025-01-19,Acoustic Bloc Screens
+rfq_line_33,product.product_product_27,rfq_15,5,110,30,2025-01-19,Drawer
+rfq_line_34,product.product_product_25,rfq_16,4,290,45,2025-01-19,Acoustic Bloc Screens
+rfq_line_35,product.product_product_27,rfq_16,5,105,25,2025-01-19,Drawer
+rfq_line_36,product.product_product_25,rfq_17,4,295,48,2025-01-19,Acoustic Bloc Screens
+rfq_line_37,product.product_product_27,rfq_17,5,108,28,2025-01-19,Drawer
+rfq_line_38,product.product_product_25,rfq_18,4,287,40,2025-01-19,Acoustic Bloc Screens
+rfq_line_39,product.product_product_27,rfq_18,5,100,20,2025-01-19,Drawer
+rfq_line_40,product.consu_delivery_03,rfq_19,1,2350,250,2025-03-31,Four Person Desk
+rfq_line_41,product.consu_delivery_02,rfq_19,1,4000,290,2025-03-31,Large Meeting Table
+rfq_line_42,product.consu_delivery_03,rfq_20,1,2350,250,2025-03-31,Four Person Desk
+rfq_line_43,product.consu_delivery_02,rfq_20,1,4000,305,2025-03-31,Large Meeting Table
+rfq_line_44,product.consu_delivery_03,rfq_21,1,2350,150,2025-03-31,Four Person Desk
+rfq_line_45,product.consu_delivery_02,rfq_21,1,4000,300,2025-03-31,Large Meeting Table
+rfq_line_46,product.product_product_6,rfq_22,3,320,300,2025-01-27,Large Cabinet
+rfq_line_47,product.product_product_7,rfq_22,10,15.8,50,2025-01-27,Storage Box
+rfq_line_48,product.product_product_6,rfq_23,3,310,290,2025-01-27,Large Cabinet
+rfq_line_49,product.product_product_7,rfq_23,10,15.5,45,2025-01-27,Storage Box
+rfq_line_50,product.product_product_6,rfq_24,3,315,295,2025-01-27,Large Cabinet
+rfq_line_51,product.product_product_7,rfq_24,10,15.6,48,2025-01-27,Storage Box
+rfq_line_52,product.product_product_8,rfq_25,2,1700,100,2025-02-28,Large Desk
+rfq_line_53,product.product_product_9,rfq_25,15,50,20,2025-02-28,Pedal Bin
+rfq_line_54,product.product_product_8,rfq_26,2,1750,110,2025-02-28,Large Desk
+rfq_line_55,product.product_product_9,rfq_26,15,55,25,2025-02-28,Pedal Bin
+rfq_line_56,product.product_product_8,rfq_27,2,1725,105,2025-02-28,Large Desk
+rfq_line_57,product.product_product_9,rfq_27,15,52,22,2025-02-28,Pedal Bin
+rfq_line_58,product.product_product_10,rfq_28,4,120,80,2025-03-15,Cabinet with Doors
+rfq_line_59,product.product_product_12,rfq_28,6,150,100,2025-03-15,Office Chair Black
+rfq_line_60,product.product_product_10,rfq_29,4,115,75,2025-03-15,Cabinet with Doors
+rfq_line_61,product.product_product_12,rfq_29,6,140,95,2025-03-15,Office Chair Black
+rfq_line_62,product.product_product_10,rfq_30,4,118,78,2025-03-15,Cabinet with Doors
+rfq_line_63,product.product_product_12,rfq_30,6,145,98,2025-03-15,Office Chair Black
+rfq_line_64,product.product_product_10,rfq_31,4,117,77,2025-03-15,Cabinet with Doors
+rfq_line_65,product.product_product_12,rfq_31,6,142,97,2025-03-15,Office Chair Black
+rfq_line_66,product.product_product_10,rfq_32,4,116,76,2025-03-15,Cabinet with Doors
+rfq_line_67,product.product_product_12,rfq_32,6,141,96,2025-03-15,Office Chair Black
+rfq_line_68,product.product_product_24,rfq_33,3,880,45,2025-02-10,Individual Workplace
+rfq_line_69,product.product_product_25,rfq_33,4,290,50,2025-02-10,Acoustic Bloc Screens
+rfq_line_70,product.product_product_24,rfq_34,3,885,50,2025-02-12,Individual Workplace
+rfq_line_71,product.product_product_25,rfq_34,4,295,55,2025-02-12,Acoustic Bloc Screens
+rfq_line_72,product.product_product_24,rfq_35,3,875,40,2025-02-14,Individual Workplace
+rfq_line_73,product.product_product_25,rfq_35,4,287,45,2025-02-14,Acoustic Bloc Screens
+rfq_line_74,product.product_product_24,rfq_36,3,882,48,2025-02-13,Individual Workplace
+rfq_line_75,product.product_product_25,rfq_36,4,292,52,2025-02-13,Acoustic Bloc Screens
+rfq_line_76,product.product_product_24,rfq_37,3,878,46,2025-02-15,Individual Workplace
+rfq_line_77,product.product_product_25,rfq_37,4,289,49,2025-02-15,Acoustic Bloc Screens
+rfq_line_78,product_server_x1,rfq_38,100,4899,210,2025-02-20,Server X1
+rfq_line_79,product_workstation_z5,rfq_38,200,2450,100,2025-02-20,Workstation Z5
+rfq_line_80,product_gpu_rtx_5090,rfq_38,350,1750,100,2025-02-20,GPU RTX 5090
+rfq_line_81,product_server_x1,rfq_39,100,4999,200,2025-02-20,Server X1
+rfq_line_82,product_workstation_z5,rfq_39,200,2499,150,2025-02-20,Workstation Z5
+rfq_line_83,product_gpu_rtx_5090,rfq_39,350,1799,100,2025-02-20,GPU RTX 5090

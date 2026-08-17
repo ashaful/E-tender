@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="category_it" model="product.category">
+        <field name="name">IT</field>
+        <field name="parent_id" ref="product.product_category_all"/>
+    </record>
+    <record id="category_servers" model="product.category">
+        <field name="name">Servers</field>
+        <field name="parent_id" ref="category_it"/>
+    </record>
+
+    <record id="category_workstations" model="product.category">
+        <field name="name">Workstations</field>
+        <field name="parent_id" ref="category_it"/>
+    </record>
+
+    <record id="category_gpus" model="product.category">
+        <field name="name">GPUs</field>
+        <field name="parent_id" ref="category_it"/>
+    </record>
+
+    <record id="product_server_x1" model="product.product">
+        <field name="name">Enterprise Server X1</field>
+        <field name="categ_id" ref="category_servers"/>
+        <field name="type">consu</field>
+        <field name="list_price">4999.00</field>
+        <field name="standard_price">3800.00</field>
+        <field name="default_code">SRV-X1</field>
+        <field name="weight">25</field>
+        <field name="uom_id" ref="uom.product_uom_unit"/>
+        <field name="uom_po_id" ref="uom.product_uom_unit"/>
+        <field name="image_1920" type="base64" file="VendorBid/static/img/demo/server.jpeg"/>
+    </record>
+
+    <record id="product_workstation_z5" model="product.product">
+        <field name="name">Workstation Pro Z5</field>
+        <field name="categ_id" ref="category_workstations"/>
+        <field name="type">consu</field>
+        <field name="list_price">2499.00</field>
+        <field name="standard_price">1900.00</field>
+        <field name="description_sale">Powerful workstation with 32-core CPU, 64GB RAM, and NVIDIA RTX 4080 GPU. Perfect for 3D rendering and engineering tasks.</field>
+        <field name="default_code">WRK-Z5</field>
+        <field name="weight">15</field>
+        <field name="uom_id" ref="uom.product_uom_unit"/>
+        <field name="uom_po_id" ref="uom.product_uom_unit"/>
+        <field name="image_1920" type="base64" file="VendorBid/static/img/demo/workstation.jpeg"/>
+    </record>
+
+    <record id="product_gpu_rtx_5090" model="product.product">
+        <field name="name">NVIDIA RTX 5090 GPU</field>
+        <field name="categ_id" ref="category_gpus"/>
+        <field name="type">consu</field>
+        <field name="list_price">1799.00</field>
+        <field name="standard_price">1300.00</field>
+        <field name="description_sale">Next-gen GPU with 24GB GDDR7 VRAM and ray-tracing support. Built for gaming, AI, and professional workloads.</field>
+        <field name="default_code">GPU-5090</field>
+        <field name="weight">1.5</field>
+        <field name="uom_id" ref="uom.product_uom_unit"/>
+        <field name="uom_po_id" ref="uom.product_uom_unit"/>
+        <field name="image_1920" type="base64" file="VendorBid/static/img/demo/5090.jpeg"/>
+    </record>
+</odoo>

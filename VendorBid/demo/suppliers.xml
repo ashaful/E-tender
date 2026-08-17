@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="supplier_1" model="res.partner">
+            <field name="name">Example Solutions</field>
+            <field name="company_type">company</field>
+            <field name="street">Banani, Dhaka</field>
+            <field name="phone">+8801712345678</field>
+            <field name="email">admin@example.com</field>
+            <field name="supplier_rank">1</field>
+            <field name="trade_license_number">BD12345678</field>
+            <field name="vat">9998125255783746</field>
+            <field name="commencement_date">2020-01-01</field>
+            <field name="expiry_date">2028-01-01</field>
+            <field name="certification_name">ISO 9001</field>
+            <field name="certificate_number">123456789</field>
+            <field name="certifying_body">ISO</field>
+            <field name="certification_award_date">2020-01-01</field>
+            <field name="certification_expiry_date">2021-01-01</field>
+            <field name="company_category_type">Limited</field>
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/1.jpg"/>
+            <field name="signatory_name">Alice Johnson</field>
+            <field name="authorized_signatory_name">Bob Smith</field>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="date_registration">2024-11-15 15:00:00</field>
+            <field name="product_category_id" ref="product.product_category_all" />
+        </record>
+
+        <record id="supplier_2" model="res.partner">
+            <field name="name">Example Innovators</field>
+            <field name="company_type">company</field>
+            <field name="street">Gulshan, Dhaka</field>
+            <field name="phone">+8801812345678</field>
+            <field name="email">info@exampletechinnovators.com</field>
+            <field name="supplier_rank">1</field>
+            <field name="trade_license_number">BD87654321</field>
+            <field name="vat">1234567890123456</field>
+            <field name="commencement_date">2019-05-15</field>
+            <field name="expiry_date">2027-05-15</field>
+            <field name="certification_name">ISO 14001</field>
+            <field name="certificate_number">987654321</field>
+            <field name="certifying_body">ISO</field>
+            <field name="certification_award_date">2019-05-15</field>
+            <field name="certification_expiry_date">2020-05-15</field>
+            <field name="company_category_type">LLC</field>           
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/2.jpg"/>
+            <field name="signatory_name">Charlie Brown</field>
+            <field name="authorized_signatory_name">Diana Prince</field>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="date_registration">2024-11-15 16:00:00</field>
+            <field name="product_category_id" ref="product.product_category_all" />
+        </record>
+
+        <record id="supplier_3" model="res.partner">
+            <field name="name">Example Suppliers</field>
+            <field name="company_type">company</field>
+            <field name="street">Dhanmondi, Dhaka</field>
+            <field name="phone">+8801912345678</field>
+            <field name="email">contact@Examplesuppliers.com</field>
+            <field name="supplier_rank">10</field>
+            <field name="trade_license_number">BD11223344</field>
+            <field name="vat">2345678901234567</field>
+            <field name="commencement_date">2018-03-10</field>
+            <field name="expiry_date">2026-03-10</field>
+            <field name="certification_name">ISO 45001</field>
+            <field name="certificate_number">112233445</field>
+            <field name="certifying_body">ISO</field>
+            <field name="certification_award_date">2018-03-10</field>
+            <field name="certification_expiry_date">2019-03-10</field>
+            <field name="company_category_type">PLC</field>
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/3.jpg"/>
+            <field name="signatory_name">Edward Norton</field>
+            <field name="authorized_signatory_name">Fiona Apple</field>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="date_registration">2024-11-15 17:00:00</field>
+            <field name="product_category_id" ref="product.product_category_all" />
+        </record>
+
+        <record id="supplier_4" model="res.partner">
+            <field name="name">Example Solutions</field>
+            <field name="company_type">company</field>
+            <field name="street">Mirpur, Dhaka</field>
+            <field name="phone">+8801612345678</field>
+            <field name="email">support@exampleprimesolutions.com</field>
+            <field name="supplier_rank">1</field>
+            <field name="trade_license_number">BD55667788</field>
+            <field name="vat">3456789012345678</field>
+            <field name="commencement_date">2021-07-20</field>
+            <field name="expiry_date">2029-07-20</field>
+            <field name="certification_name">ISO 27001</field>
+            <field name="certificate_number">556677889</field>
+            <field name="certifying_body">ISO</field>
+            <field name="certification_award_date">2021-07-20</field>
+            <field name="certification_expiry_date">2022-07-20</field>
+            <field name="company_category_type">Partnership</field>
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/4.jpg"/>
+            <field name="signatory_name">George Clooney</field>
+            <field name="authorized_signatory_name">Hannah Montana</field>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="date_registration">2024-11-15 18:00:00</field>
+            <field name="product_category_id" ref="product.product_category_all" />
+        </record>
+
+        <record id="supplier_5" model="res.partner">
+            <field name="name">Example Tech</field>
+            <field name="company_type">company</field>
+            <field name="street">Uttara, Dhaka</field>
+            <field name="phone">+8801512345678</field>
+            <field name="email">sales@exampleinnovativetech.com</field>
+            <field name="supplier_rank">1</field>
+            <field name="trade_license_number">BD99887766</field>
+            <field name="vat">4567890123456789</field>
+            <field name="commencement_date">2022-09-25</field>
+            <field name="expiry_date">2030-09-25</field>
+            <field name="certification_name">ISO 50001</field>
+            <field name="certificate_number">998877665</field>
+            <field name="certifying_body">ISO</field>
+            <field name="certification_award_date">2022-09-25</field>
+            <field name="certification_expiry_date">2023-09-25</field>
+            <field name="company_category_type">Sole Proprietorship</field>
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/5.png"/>
+            <field name="signatory_name">Ian McKellen</field>
+            <field name="authorized_signatory_name">Jessica Alba</field>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="date_registration">2024-11-15 19:00:00</field>
+            <field name="product_category_id" ref="product.product_category_all" />
+        </record>
+
+        <record id="supplier_6" model="res.partner">
+            <field name="name">Example Enterprises</field>
+            <field name="company_type">company</field>
+            <field name="street">Motijheel, Dhaka</field>
+            <field name="phone">+8801412345678</field>
+            <field name="email">info@examplefutureenterprises.com</field>
+            <field name="supplier_rank">1</field>
+            <field name="trade_license_number">BD33445566</field>
+            <field name="vat">5678901234567890</field>
+            <field name="commencement_date">2023-02-14</field>
+            <field name="expiry_date">2031-02-14</field>
+            <field name="certification_name">ISO 22000</field>
+            <field name="certificate_number">334455667</field>
+            <field name="certifying_body">ISO</field>
+            <field name="certification_award_date">2023-02-14</field>
+            <field name="certification_expiry_date">2024-02-14</field>
+            <field name="company_category_type">Others</field>
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/6.png"/>
+            <field name="signatory_name">Kevin Spacey</field>
+            <field name="authorized_signatory_name">Laura Dern</field>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="date_registration">2024-11-15 20:00:00</field>
+            <field name="product_category_id" ref="product.product_category_all" />
+        </record>
+
+        <record id="supplier_7" model="res.partner">
+            <field name="name">Example Solutions</field>
+            <field name="company_type">company</field>
+            <field name="street">Bashundhara, Dhaka</field>
+            <field name="phone">+8801312345678</field>
+            <field name="email">contact@examplebrightsolutions.com</field>
+            <field name="supplier_rank">1</field>
+            <field name="trade_license_number">BD77889900</field>
+            <field name="vat">6789012345678901</field>
+            <field name="commencement_date">2024-04-30</field>
+            <field name="expiry_date">2032-04-30</field>
+            <field name="certification_name">ISO 9001</field>
+            <field name="certificate_number">778899001</field>
+            <field name="certifying_body">ISO</field>
+            <field name="certification_award_date">2024-04-30</field>
+            <field name="certification_expiry_date">2025-04-30</field>
+            <field name="company_category_type">Limited</field>
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/7.jpg"/>
+            <field name="signatory_name">Michael Jordan</field>
+            <field name="authorized_signatory_name">Nancy Drew</field>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="date_registration">2024-11-15 21:00:00</field>
+            <field name="product_category_id" ref="product.product_category_all" />
+        </record>
+
+        <record id="supplier_8" model="res.partner">
+            <field name="name">Example Technologies</field>
+            <field name="company_type">company</field>
+            <field name="street">Khilgaon, Dhaka</field>
+            <field name="phone">+8801212345678</field>
+            <field name="email">admin@examplesmarttech.com</field>
+            <field name="supplier_rank">1</field>
+            <field name="trade_license_number">BD44556677</field>
+            <field name="vat">7890123456789012</field>
+            <field name="commencement_date">2025-06-12</field>
+            <field name="expiry_date">2033-06-12</field>
+            <field name="certification_name">ISO 14001</field>
+            <field name="certificate_number">445566778</field>
+            <field name="certifying_body">ISO</field>
+            <field name="certification_award_date">2025-06-12</field>
+            <field name="certification_expiry_date">2026-06-12</field>
+            <field name="company_category_type">Limited</field>
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/8.png"/>
+            <field name="signatory_name">Oscar Wilde</field>
+            <field name="authorized_signatory_name">Paula Abdul</field>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="date_registration">2024-11-15 22:00:00</field>
+            <field name="product_category_id" ref="VendorBid.category_it" />
+        </record>
+
+        <record id="supplier_9" model="res.partner">
+            <field name="name">Example-N Solutions</field>
+            <field name="company_type">company</field>
+            <field name="street">Paltan, Dhaka</field>
+            <field name="phone">+8801112345678</field>
+            <field name="email">info@examplenextgensolutions.com</field>
+            <field name="supplier_rank">1</field>
+            <field name="trade_license_number">BD66778899</field>
+            <field name="vat">8901234567890123</field>
+            <field name="commencement_date">2026-08-18</field>
+            <field name="expiry_date">2034-08-18</field>
+            <field name="certification_name">ISO 45001</field>
+            <field name="certificate_number">667788992</field>
+            <field name="certifying_body">ISO</field>
+            <field name="certification_award_date">2026-08-18</field>
+            <field name="certification_expiry_date">2027-08-18</field>
+            <field name="company_category_type">PLC</field>
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/9.jpg"/>
+            <field name="signatory_name">Quentin Tarantino</field>
+            <field name="authorized_signatory_name">Rachel Green</field>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="date_registration">2024-11-15 23:00:00</field>
+            <field name="product_category_id" ref="product.product_category_all" />
+        </record>
+
+        <record id="supplier_10" model="res.partner">
+            <field name="name">Example-A Enterprises</field>
+            <field name="company_type">company</field>
+            <field name="street">Farmgate, Dhaka</field>
+            <field name="phone">+8801012345678</field>
+            <field name="email">support@examplealphaenterprises.com</field>
+            <field name="supplier_rank">1</field>
+            <field name="trade_license_number">BD22334455</field>
+            <field name="vat">9012345678901234</field>
+            <field name="commencement_date">2027-10-22</field>
+            <field name="expiry_date">2035-10-22</field>
+            <field name="certification_name">ISO 27001</field>
+            <field name="certificate_number">223344556</field>
+            <field name="certifying_body">ISO</field>
+            <field name="certification_award_date">2027-10-22</field>
+            <field name="certification_expiry_date">2028-10-22</field>
+            <field name="company_category_type">Partnership</field>
+            <field name="image_1920" type="base64" file="VendorBid/static/img/demo-supplier/10.png"/>
+            <field name="signatory_name">John Doe</field>
+            <field name="authorized_signatory_name">Jane Doe</field>
+            <field name="company_stamp" type="base64" file="VendorBid/static/img/demo-supplier/stamp.png"/>
+            <field name="date_registration">2024-11-16 00:00:00</field>
+            <field name="product_category_id" ref="product.product_category_all" />
+        </record>
+
+        <record id='supplier_11' model='res.partner'>
+            <field name='name'>Example Computers</field>
+            <field name='company_type'>company</field>
+            <field name='street'>Elephant Road, Dhaka</field>
+            <field name='phone'>+8801912345678</field>
+            <field name='email'>contact@exampleryans.com</field>
+            <field name='supplier_rank'>1</field>
+            <field name='trade_license_number'>BD12345678</field>
+            <field name='vat'>9998121255783746</field>
+            <field name='commencement_date'>1996-01-01</field>
+            <field name='expiry_date'>2028-01-01</field>
+            <field name='certification_name'>ISO 9001</field>
+            <field name='certificate_number'>123456789</field>
+            <field name='certifying_body'>ISO</field>
+            <field name='certification_award_date'>1996-01-01</field>
+            <field name='certification_expiry_date'>2031-01-01</field>
+            <field name='company_category_type'>Limited</field>
+            <field name='image_1920' type='base64' file='VendorBid/static/img/demo-supplier/11.jpg'/>
+            <field name='signatory_name'>Fahim Ahmed</field>
+            <field name='authorized_signatory_name'>Rezwanul Haque</field>
+            <field name='company_stamp' type='base64' file='VendorBid/static/img/demo-supplier/stamp.png'/>
+            <field name='date_registration'>2024-11-16 01:00:00</field>
+            <field name="product_category_id" ref="VendorBid.category_it" />
+        </record>
+
+        <record id="supplier_1_user" model="res.users">
+            <field name="partner_id" ref="supplier_1"/>
+            <field name="name">Example Creative Solutions</field>
+            <field name="login">admin@creativesol.com</field>
+            <field name="password">admin@examplecreativesol.com</field>
+            <field name="name">ExampleCreative Solutions</field>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+        </record>
+
+        <record id="supplier_2_user" model="res.users">
+            <field name="partner_id" ref="supplier_2"/>
+            <field name="name">Example Tech Innovators</field>
+            <field name="login">info@exampletechinnovators.com</field>
+            <field name="password">info@techinnovators.com</field>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+        </record>
+
+        <record id="supplier_3_user" model="res.users">
+            <field name="partner_id" ref="supplier_3"/>
+            <field name="name">Example-G Suppliers</field>
+            <field name="login">contact@exampleglobalsuppliers.com</field>
+            <field name="password">contact@globalsuppliers.com</field>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+        </record>
+
+        <record id="supplier_4_user" model="res.users">
+            <field name="partner_id" ref="supplier_4"/>
+            <field name="name">Example Prime Solutions</field>
+            <field name="login">support@primesolutions.com</field>
+            <field name="password">support@exampleprimesolutions.com</field>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+        </record>
+
+        <record id="supplier_5_user" model="res.users">
+            <field name="partner_id" ref="supplier_5"/>
+            <field name="name">Example I Tech</field>
+            <field name="login">sales@exampleinnovativetech.com</field>
+            <field name="password">sales@innovativetech.com</field>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+        </record>
+
+        <record id="supplier_6_user" model="res.users">
+            <field name="partner_id" ref="supplier_6"/>
+            <field name="name">Example-F Enterprises</field>
+            <field name="login">info@futureenterprises.com</field>
+            <field name="password">info@futureenterprises.com</field>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+        </record>
+
+        <record id="supplier_7_user" model="res.users">
+            <field name="partner_id" ref="supplier_7"/>
+            <field name="name">Example-B Solutions</field>
+            <field name="login">contact@brightsolutions.com</field>
+            <field name="password">contact@brightsolutions.com</field>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+        </record>
+
+        <record id="supplier_8_user" model="res.users">
+            <field name="partner_id" ref="supplier_8"/>
+            <field name="name">Example Technologies</field>
+            <field name="login">admin@smarttech.com</field>
+            <field name="password">admin@smarttech.com</field>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+        </record>
+
+        <record id="supplier_9_user" model="res.users">
+            <field name="partner_id" ref="supplier_9"/>
+            <field name="name">Example-N Solutions</field>
+            <field name="login">info@nextgensolutions.com</field>
+            <field name="password">info@nextgensolutions.com</field>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+        </record>
+
+        <record id="supplier_10_user" model="res.users">
+            <field name="partner_id" ref="supplier_10"/>
+            <field name="name">Example-A Enterprises</field>
+            <field name="login">support@alphaenterprises.com</field>
+            <field name="password">support@alphaenterprises.com</field>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+        </record>
+
+        <record id="supplier_11_user" model="res.users">
+            <field name="partner_id" ref="supplier_11"/>
+            <field name="name">Example-R Computers</field>
+            <field name="login">contact@ryans.com</field>
+            <field name="password">contact@ryans.com</field>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+            <field name="company_id" ref="base.main_company"/>
+        </record>
+        
+    </data>
+</odoo>

@@ -1,0 +1,12 @@
+id,acc_holder_name,acc_number,acc_number,bank_id:id,partner_id:id,branch_address
+bank_account_1,Azharul Islam,0000000001,0000000001,bank_1,supplier_1,"Banani, Dhaka"
+bank_account_2,Karim Ahmed,0000000002,0000000002,bank_2,supplier_2,"Gulshan, Dhaka"
+bank_account_3,Mehedi Hasan,0000000003,0000000003,bank_3,supplier_3,"Dhanmondi, Dhaka"
+bank_account_4,Nusrat Jahan,0000000004,0000000004,bank_4,supplier_4,"Mirpur, Dhaka"
+bank_account_5,Rafiqul Islam,0000000005,0000000005,bank_5,supplier_5,"Uttara, Dhaka"
+bank_account_6,Fatema Begum,0000000006,0000000006,bank_6,supplier_6,"Motijheel, Dhaka"
+bank_account_7,Kamal Hossain,0000000007,0000000007,bank_7,supplier_7,"Bashundhara, Dhaka"
+bank_account_8,Nasrin Akter,0000000008,0000000008,bank_8,supplier_8,"Khilgaon, Dhaka"
+bank_account_9,Jahid Hasan,0000000009,0000000009,bank_9,supplier_9,"Paltan, Dhaka"
+bank_account_10,Rafiq Ahmed,0000000010,0000000010,bank_10,supplier_10,"Farmgate, Dhaka"
+bank_account_11,Sohel Rana,0000000011,0000000011,bank_1,supplier_11,"Elephant Road, Dhaka"

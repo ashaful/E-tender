@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_edit_request_tree" model="ir.ui.view">
+        <field name="name">partner.edit.request.tree</field>
+        <field name="model">partner.edit.request</field>
+        <field name="arch" type="xml">
+            <list string="Partner Edit Requests">
+                <field name="partner_id" string="Partner"/>
+                <field name="create_date" string="Submission Date"/>
+                <field name="trade_license_number" string="Trade License Number"/>
+                <field name="street" string="Address"/>
+                <field name="phone" string="Phone"/>
+                <field
+                        name="state"
+                        widget="badge"
+                        decoration-warning="state == 'pending'"
+                        decoration-success="state == 'approved'"
+                        decoration-danger="state == 'rejected'"
+                />
+            </list>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_partner_edit_request_form" model="ir.ui.view">
+        <field name="name">partner.edit.request.form</field>
+        <field name="model">partner.edit.request</field>
+        <field name="arch" type="xml">
+            <form string="Partner Edit Request">
+
+                <header>
+                    <field name="state" widget="statusbar" statusbar_visible="pending"/>
+
+                    <button
+                            name="action_approve"
+                            string="Approve"
+                            class="btn btn-primary me-2"
+                            type="object"
+                            icon="fa-check"
+                            groups="VendorBid.group_supplies_reviewer"
+                            invisible="state != 'pending'"
+                    />
+                    <button
+                            name="action_open_reject_wizard"
+                            string="Reject"
+                            class="btn btn-danger"
+                            type="object"
+                            icon="fa-close"
+                            groups="VendorBid.group_supplies_reviewer"
+                            invisible="state != 'pending'"
+                    />
+                </header>
+
+                <sheet>
+                    <field name="state" invisible="1"/>
+                    <field name="image_1920" widget="image" class="oe_avatar" readonly="1"/>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="partner_id" readonly="1"/>
+                        </h1>
+                    </div>
+
+                    <group>
+                        <field name="create_date" string="Submission Date" readonly="1"
+                               invisible="not create_date"/>
+                        <field name="reviewed_by" string="Reviewed By" invisible="state == 'pending'"/>
+                        <field name="review_date" string="Review Date" invisible="state == 'pending'"/>
+                        <field name="rejection_reason" string="Rejection Reason" invisible="state != 'rejected'"
+                               class="text-danger" readonly="1"/>
+
+                    </group>
+
+                    <notebook>
+                        <page string="Basic Information"
+                              invisible="not (commencement_date or expiry_date or product_category_id or trade_license_number or street or phone)">
+                            <group class="row">
+                                <group>
+                                    <field name="product_category_id" readonly="1" invisible="not product_category_id"/>
+                                    <field name="trade_license_number" readonly="1"
+                                           invisible="not trade_license_number"/>
+                                    <field name="commencement_date" string="Trade License Commencement" readonly="1"
+                                           invisible="not commencement_date"/>
+                                    <field name="expiry_date" string="Trade License Expiry" readonly="1"
+                                           invisible="not expiry_date"/>
+                                    <field name="street" readonly="1" invisible="not street"/>
+                                    <field name="phone" readonly="1" invisible="not phone"/>
+                                </group>
+                            </group>
+                        </page>
+
+                        <page string="Certification Details">
+                            <group class="row">
+                                <group>
+                                    <field name="certification_name" readonly="1" invisible="not certification_name"/>
+                                    <field name="certificate_number" readonly="1" invisible="not certificate_number"/>
+                                    <field name="certifying_body" readonly="1" invisible="not certifying_body"/>
+                                    <field name="certification_award_date" readonly="1"
+                                           invisible="not certification_award_date"/>
+                                    <field name="certification_expiry_date" readonly="1"
+                                           invisible="not certification_expiry_date"/>
+                                </group>
+                            </group>
+                        </page>
+
+                        <page string="Documents"
+                              invisible="not (trade_license_doc or certificate_of_incorporation_doc or certificate_of_good_standing_doc or establishment_card_doc or vat_tax_certificate_doc or memorandum_of_association_doc or identification_of_authorised_person_doc or bank_letter_doc or past_2_years_financial_statement_doc or other_certification_doc or company_stamp)">
+                            <group class="row">
+                                <group>
+                                    <field name="trade_license_doc" widget="binary" readonly="1"
+                                           filename="trade_license_doc_filename" invisible="not trade_license_doc"/>
+                                    <field name="certificate_of_incorporation_doc" widget="binary" readonly="1"
+                                           filename="certificate_of_incorporation_doc_filename"
+                                           invisible="not certificate_of_incorporation_doc"/>
+                                    <field name="certificate_of_good_standing_doc" widget="binary" readonly="1"
+                                           filename="certificate_of_good_standing_doc_filename"
+                                           invisible="not certificate_of_good_standing_doc"/>
+                                    <field name="establishment_card_doc" widget="binary" readonly="1"
+                                           filename="establishment_card_doc_filename"
+                                           invisible="not establishment_card_doc"/>
+                                    <field name="vat_tax_certificate_doc" widget="binary" readonly="1"
+                                           filename="vat_tax_certificate_doc_filename"
+                                           invisible="not vat_tax_certificate_doc"/>
+                                </group>
+                                <group>
+                                    <field name="memorandum_of_association_doc" widget="binary" readonly="1"
+                                           filename="memorandum_of_association_doc_filename"
+                                           invisible="not memorandum_of_association_doc"/>
+                                    <field name="identification_of_authorised_person_doc" widget="binary" readonly="1"
+                                           filename="identification_of_authorised_person_doc_filename"
+                                           invisible="not identification_of_authorised_person_doc"/>
+                                    <field name="bank_letter_doc" widget="binary" readonly="1"
+                                           filename="bank_letter_doc_filename" invisible="not bank_letter_doc"/>
+                                    <field name="past_2_years_financial_statement_doc" widget="binary" readonly="1"
+                                           filename="past_2_years_financial_statement_doc_filename"
+                                           invisible="not past_2_years_financial_statement_doc"/>
+                                    <field name="other_certification_doc" widget="binary" readonly="1"
+                                           filename="other_certification_doc_filename"
+                                           invisible="not other_certification_doc"/>
+                                    <field name="company_stamp" widget="binary" readonly="1"
+                                           filename="company_stamp_filename" invisible="not company_stamp"/>
+                                </group>
+                            </group>
+                        </page>
+
+                        <page string="Signatures" invisible="not (signatory_name or authorized_signatory_name)">
+                            <group class="row">
+                                <group>
+                                    <field name="signatory_name" readonly="1" invisible="not signatory_name"/>
+                                    <field name="authorized_signatory_name" readonly="1"
+                                           invisible="not authorized_signatory_name"/>
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_partner_edit_request_search" model="ir.ui.view">
+        <field name="name">partner.edit.request.search</field>
+        <field name="model">partner.edit.request</field>
+        <field name="arch" type="xml">
+            <search string="Search Partner Edit Requests">
+                <field name="partner_id"/>
+                <field name="trade_license_number"/>
+                <field name="street"/>
+                <field name="phone"/>
+                <field name="state"/>
+
+                <filter name="filter_pending" string="Pending" domain="[('state','=','pending')]"
+                        help="Pending Requests"/>
+                <filter name="filter_approved" string="Approved" domain="[('state','=','approved')]"
+                        help="Approved Requests"/>
+                <filter name="filter_rejected" string="Rejected" domain="[('state','=','rejected')]"
+                        help="Rejected Requests"/>
+            </search>
+        </field>
+    </record>
+
+
+    <!-- Action -->
+    <record id="partner_edit_request_action" model="ir.actions.act_window">
+        <field name="name">Partner Edit Requests</field>
+        <field name="res_model">partner.edit.request</field>
+        <field name="view_mode">list,form</field>
+        <field name="context">{'search_default_filter_pending': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Partner Edit Requests
+            </p>
+        </field>
+    </record>
+    <menuitem
+            id="partner_edit_request_menu"
+            name="Edit Requests"
+            action="partner_edit_request_action"
+            parent="supplies_vendor_menu"
+            sequence="12"
+    />
+</odoo>
