@@ -63,7 +63,7 @@ class TestSuppliesRegistration(TransactionCase):
             'login': self.registration.email,
             'partner_id': 1,
             'company_id': self.env.company.id,
-            'group_ids': [(6, 0, self.env.ref('base.group_portal').ids)],
+            'groups_id': [(6, 0, self.env.ref('base.group_portal').ids)],
         }
 
         # Test finalize

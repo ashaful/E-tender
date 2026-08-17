@@ -239,7 +239,7 @@ class UserSchema(BaseModel):
         data = super().model_dump()
         data['partner_id'] = kwargs.get('partner_id')
         data['company_id'] = kwargs.get('company_id')
-        data['group_ids'] = kwargs.get('group_ids')
+        data['groups_id'] = kwargs.get('groups_id')
         return data
 
 

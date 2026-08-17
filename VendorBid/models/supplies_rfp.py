@@ -160,7 +160,7 @@ class SuppliesRfp(models.Model):
         domain = ['|',
                   ('create_uid', '=', user.id),  # Record created by the current user
                   '&',
-                  ('create_uid.group_ids', 'in', requester_group.id),
+                  ('create_uid.groups_id', 'in', requester_group.id),
                   # Record created by someone in the requester group
                   '|',
                   ('state', '=', 'draft'),  # Record is in 'draft' state

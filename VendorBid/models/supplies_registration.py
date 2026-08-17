@@ -184,7 +184,7 @@ class SuppliesRegistration(models.TransientModel):
         user_data = user_schema.model_dump(
             partner_id=company.id,
             company_id=self.env.company.id,
-            group_ids=[(6, 0, self.env.ref('base.group_portal').ids)]
+            groups_id=[(6, 0, self.env.ref('base.group_portal').ids)]
         )
         self.env['res.users'].sudo().create(user_data)
 
